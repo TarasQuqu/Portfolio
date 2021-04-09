@@ -1,0 +1,18 @@
+// main: ../style.less
+.portfolio{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -1rem;
+	padding-bottom: 20px;
+}
+.portfolio__col{
+	width: 33%;
+	padding:1rem;
+	
+	@media @mobile{
+		width: 50%;
+	}
+	@media @mobile-sm{
+		width: 100%;
+	}
+}

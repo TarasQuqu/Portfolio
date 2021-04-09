@@ -1,0 +1,49 @@
+// main: ../style.less
+
+.social{
+ display: flex;
+ margin-bottom: 2rem;
+}
+
+.social__item{
+width: 2.5rem;
+height: 2.5rem;
+padding:0.5rem 0.7rem;
+	
+background-color: fade(@black,30%);
+border-right: 0.1rem solid @black;
+font-size: 1.5rem;	
+line-height: 1;
+	
+text-decoration: none;
+color:fade(@black,30%);
+	
+transition: background .1s linear,color .1s linear;
+	
+&:last-child{
+border-right: none;
+}
+	
+&:hover{
+	background-color:@gray-light;
+	color:@black;
+}
+	    /* Modificators */
+
+	&--footer{
+		padding: 0.3rem 0.3rem;
+		
+		width: 1.2rem;
+		height: 1.2rem;
+		font-size:1rem;
+		color:@gray-light;
+		background-color: @black;
+	&:first-child{
+		padding-left: 1.7rem;
+		}
+	&:hover{
+	background-color:@black;
+	color:@white;
+      }
+	}
+}

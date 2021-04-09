@@ -1,0 +1,80 @@
+// main: ../style.less
+.about_me{
+	padding-top: 4.3rem;
+	padding-bottom: 8.75rem;
+
+}
+.about__inner{
+	display: flex;
+	justify-content: space-between;
+	
+	background: url("/images/backgroundAvatar/bgr.png") right bottom no-repeat;
+}
+.about__content{ 
+	max-width:510px;
+	padding-left: 4rem;
+	margin-top:2rem;
+	@media @mobile{
+		width: 100%;
+		max-width: 100%;
+		padding-left:2rem;
+	    margin-top:1rem;
+	}
+}
+.about__title1{
+	font-family: "Montserrat";
+	font-size:3rem;
+	color:@black;
+	font-weight: 700;
+	text-transform: uppercase;
+	
+	@media @notebook{
+		font-size: 2rem;
+	}
+	@media @tablet{
+		font-size: 1rem;
+	}
+}
+.about__title2{
+	font-family: "Montserrat";
+	font-size:5.1rem;
+	color:fade(@gray-light,30%);
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-bottom: 2rem;
+	
+	@media @notebook{
+		font-size: 4rem;
+		padding-bottom: .5rem;
+	}
+	@media @tablet{
+		font-size: 2rem;
+		padding-bottom: .2rem;
+	}
+}
+about_photo{
+	display: block;
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.about__bg_{
+	@media @mobile{
+		display: none;	
+	}
+}
+.about__mainphoto{
+	max-height: 500px;
+	position: absolute;
+	z-index: 2;
+	@media @mobile{
+		display: none;	
+	}
+}
+.about__subtitle{
+	font-family: "Montserrat";
+	font-size:0.75rem;
+	color:@gray-light;
+	font-weight: 300;
+	padding-bottom: 4rem;
+}
